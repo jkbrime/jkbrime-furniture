@@ -127,6 +127,7 @@
     background-color: #e6e6e6;
     padding-block: 50px;
     padding-inline: 40px;
+    z-index: 2;
   }
   .pro-container h1 {
     text-align: center;
@@ -172,7 +173,7 @@
     transform: rotateZ(-30deg);
   }
   .middle {
-    background-color: red;
+    
     width: 120px;
     height: 800px;
     position: absolute;
@@ -265,5 +266,106 @@
     }
     .hero-right img {
       width: 100%;
+    }
+
+    .super-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10%;
+      margin-block: 45px;
+      margin-inline: 45px;
+    }
+    .super-left {
+      width: 40%;
+    }
+    .super-left img {
+      width: 70%;
+    }
+    .super-right {
+      width: 40%;
+    }
+    .super-right h1 {
+      font-size: 30px;
+    }
+    .super-right p {
+      font-size: 15px;
+      margin-block: 25px;
+      
+    }
+    .link {
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      border: 1px solid black;
+      padding-inline: 8px;
+      padding-block: 1px;
+      color: black;
+    }
+
+    .pro-container {
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #e6e6e6;
+      padding-block: 25px;
+      padding-inline: 20px;
+      z-index: 2;
+    }
+    .pro-container h1 {
+      text-align: center;
+      font-size: 15px;
+      padding-bottom: 7px;
+    }
+    .text {
+      text-align: center;
+      font-size: 20px;
+      padding-bottom: 7px;
+    }
+    .pro-items {
+      margin-top: 30px;
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      z-index: 2;
+    }
+    .pro-items div {
+      width: 70%;
+    }
+    .pro-items div img {
+      width: 80%;
+    }
+    .pro-items div h3 {
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .pro-items div p {
+      width: 60%;
+      margin-bottom: 20px;
+    }
+    .pro-items div a {
+      color: black;
+      text-decoration: none;
+      border: 1.5px solid black;
+      padding: 10px;
+      font-size: 15px;
+    }
+    .pro-items div a i {
+      padding-left: 5px;
+      transform: rotateZ(-30deg);
+    }
+    .middle {
+      background-color: red;
+      width: 80px;
+      height: 500px;
+      position: absolute;
+      left: 450px;
+      top: 90rem;
+      z-index: 1;
+  
     }
   }
